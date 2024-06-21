@@ -80,5 +80,6 @@ body {
 .grid-container {
     display: grid;
     place-items: center;    /* Center both horizontally and vertically */
-    height: 30vh;          /* Full viewport height for demonstration */
+    height: 25vh;           /* 1/4th of the viewport height */
+    width: 25vw;            /* 1/4th of the viewport width */
 }
