@@ -1,0 +1,84 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #19c0ff;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggle.active + .navbar-nav {
+        display: flex;
+    }
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+/* Iframe Container Styles */
+.iframe-container {
+    padding: 10px;    /* Padding inside the container */
+    margin: 20px;     /* Margin around the container */
+    background: transparent;
+    border: 1px solid #ccc;
+}
+
+/* Grid Container Styles */
+.grid-container {
+    display: grid;
+    place-items: center;    /* Center both horizontally and vertically */
+    height: 100vh;          /* Full viewport height for demonstration */
+}
