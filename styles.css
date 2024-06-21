@@ -80,7 +80,7 @@ body {
 .grid-container {
     display: grid;
     place-items: center;    /* Center both horizontally and vertically */
-    height: 30vh;          /* Height of the container */
+    height: 10vh;          /* Height of the container */
     width: 100%;          /* Width of the container */
     padding: 10px;        /* Padding inside the container */
     margin: 20px;         /* Margin around the container */
