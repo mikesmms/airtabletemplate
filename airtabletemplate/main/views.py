@@ -8,3 +8,6 @@ def index(request):
 
 def contact(request):
     return render(request, 'main/contact.html')
+
+def request_template(request):
+    return render(request, 'main/request.html')

@@ -12,6 +12,10 @@ def get_records():
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
-        return response.json()['records']
+        records = response.json()['records']
+        for record in records:
+            if 'Image' in record['fields'] and record['fields']['Image']:
+                record['fields']['Image'] = record['fields']['Image'][0]['url']
+        return records
     else:
         return None

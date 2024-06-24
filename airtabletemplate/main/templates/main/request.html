@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Airtable Template - Home</title>
+    <title>Airtable Template - Request</title>
     <!-- Favicon-->
     {% load static %}
     <link rel="icon" type="image/x-icon" href="{% static 'main/assets/favicon.ico' %}" />
@@ -34,12 +34,6 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <a href="{% url 'request' %}" class="btn btn-outline-dark">
-                        <i class="bi bi-arrow-right-circle-fill"></i>
-                        Request a Template
-                    </a>
-                </form>
             </div>
         </div>
     </nav>
@@ -47,24 +41,11 @@
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Build in Seconds</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Find the best template for your next Airtable project</p>
+                <h1 class="display-4 fw-bolder">Request Teplate</h1>
+                <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
             </div>
         </div>
     </header>
-     <!-- Search Bar -->
-     <section class="search-bar py-5">
-        <div class="container px-4 px-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="input-group">
-                        <input type="text" class="form-control search-input" placeholder="Search templates..." aria-label="Search templates" aria-describedby="button-search">
-                        <button class="btn btn-outline-secondary search-button" type="button" id="button-search">Search</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Section-->
     <section class="py-5">
         <div class="container px-4 px-lg-5 mt-5">
@@ -73,7 +54,7 @@
                 <div class="col mb-5">
                     <div class="card h-100">
                         <!-- Product image-->
-                        <img class="card-img-top product-image" src="{{ record.fields.Image }}" alt="..." />
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -85,7 +66,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{{ record.fields.Url }}">Get Template</a></div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
                         </div>
                     </div>
                 </div>
