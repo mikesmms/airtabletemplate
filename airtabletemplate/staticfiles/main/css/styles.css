@@ -10851,10 +10851,9 @@ textarea.form-control-lg {
 /* Header section with background image */
 .header-section {
   background-image: url('/static/main/assets/your-background-image.jpg');
-  background-size: cover; /* Ensures the image covers the entire element */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 100vh; /* Ensure the header takes the full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   color: #fff;
 }
